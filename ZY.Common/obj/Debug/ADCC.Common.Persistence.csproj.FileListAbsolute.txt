@@ -1,0 +1,5 @@
+D:\ADCC.Project\SVN\ADCC.ARNIC424\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\ADCC.Common.Persistence.dll
+D:\ADCC.Project\SVN\ADCC.ARNIC424\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\ADCC.Common.Persistence.pdb
+D:\ADCC.Project\SVN\ADCC.ARNIC424\src\ADCC.ARNIC424.module\SaveTempory\Helper\obj\Debug\ADCC.Common.Persistence.dll
+D:\ADCC.Project\SVN\ADCC.ARNIC424\src\ADCC.ARNIC424.module\SaveTempory\Helper\obj\Debug\ADCC.Common.Persistence.pdb
+D:\ADCC.Project\SVN\ADCC.ARNIC424\src\ADCC.ARNIC424.module\SaveTempory\Helper\obj\Debug\ADCC.Common.Persistence.csprojResolveAssemblyReference.cache

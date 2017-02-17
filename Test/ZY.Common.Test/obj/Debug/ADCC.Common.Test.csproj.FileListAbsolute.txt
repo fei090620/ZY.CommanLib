@@ -1,0 +1,16 @@
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\bin\Debug\ADCC.Common.Test.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\bin\Debug\ADCC.Common.Test.pdb
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\bin\Debug\ADCC.Common.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\bin\Debug\ADCC.Common.pdb
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\obj\Debug\ADCC.Common.Test.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\obj\Debug\ADCC.Common.Test.pdb
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Testdlls\ADCC.Common.Test.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Testdlls\ADCC.Common.Test.pdb
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\ADCC.Common.Test\obj\Debug\ADCC.Common.Test.csprojResolveAssemblyReference.cache
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Test\Testdlls\ADCC.Common.Test.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Test\Testdlls\ADCC.Common.Test.pdb
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Test\ADCC.Common.Test\obj\Debug\ADCC.Common.Test.csprojResolveAssemblyReference.cache
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Test\ADCC.Common.Test\obj\Debug\ADCC.Common.Test.dll
+D:\ADCC.Code\SVN\Solutions\ADCC.FPDAM\src1\V.0.4\ADCC.Framework\Test\ADCC.Common.Test\obj\Debug\ADCC.Common.Test.pdb

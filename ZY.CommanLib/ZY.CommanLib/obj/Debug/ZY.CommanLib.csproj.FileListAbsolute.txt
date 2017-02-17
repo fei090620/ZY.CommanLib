@@ -1,0 +1,8 @@
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\bin\Debug\ZY.CommanLib.exe.config
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\bin\Debug\ZY.CommanLib.exe
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\bin\Debug\ZY.CommanLib.pdb
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\obj\Debug\ZY.CommanLib.csprojResolveAssemblyReference.cache
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\obj\Debug\ZY.CommanLib.Properties.Resources.resources
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\obj\Debug\ZY.CommanLib.csproj.GenerateResource.Cache
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\obj\Debug\ZY.CommanLib.exe
+D:\ADCC.Code\Learning\CommanLib\ZY.CommanLib\ZY.CommanLib\obj\Debug\ZY.CommanLib.pdb

@@ -1,0 +1,5 @@
+D:\ADCC.Code\Learning\CommanLib\Test\ZY.Common.Test\obj\Debug\ZY.Common.Test.csprojResolveAssemblyReference.cache
+D:\ADCC.Code\Learning\CommanLib\Test\Testdlls\ZY.Common.Test.dll
+D:\ADCC.Code\Learning\CommanLib\Test\Testdlls\ZY.Common.Test.pdb
+D:\ADCC.Code\Learning\CommanLib\Test\ZY.Common.Test\obj\Debug\ZY.Common.Test.dll
+D:\ADCC.Code\Learning\CommanLib\Test\ZY.Common.Test\obj\Debug\ZY.Common.Test.pdb

@@ -1,0 +1,5 @@
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\bin\Release\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\bin\Release\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\obj\Release\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\obj\Release\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\obj\Release\Helper.csprojResolveAssemblyReference.cache

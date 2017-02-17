@@ -1,0 +1,37 @@
+D:\DevProjects\ADCC\ADCC-FPDAM\src\ThirtParty\BaseLib\Helper\bin\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ADCC-FPDAM\src\ThirtParty\BaseLib\Helper\bin\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ADCC-FPDAM\src\ThirtParty\BaseLib\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+D:\DevProjects\ADCC\ADCC-FPDAM\src\ThirtParty\BaseLib\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ADCC-FPDAM\src\ThirtParty\BaseLib\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\bin\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\bin\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\ThirtParty\BaseLib\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\ThirtParty\BaseLib\Helper\bin\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\ThirtParty\BaseLib\Helper\bin\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\ThirtParty\BaseLib\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\ThirtParty\BaseLib\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\Helper\bin\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\Helper\bin\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\test\abstracTest\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\Helper\bin\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\Helper\bin\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ARNIC424ParseModule\src\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ADCC\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ADCC\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ADCC\ADCC.ARNIC424\ADCC.ARNIC424.module\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ADCC\ADCC.ARNIC424\ADCC.ARNIC424.module\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ADCC\ADCC.ARNIC424\ADCC.ARNIC424.module\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+E:\zy.software.adcc\ADCC\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.dll
+E:\zy.software.adcc\ADCC\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.pdb
+E:\zy.software.adcc\ADCC\ADCC.ARNIC424\ADCC.ARNIC424.module\Helper\obj\Debug\RuleEngine.Helper.dll
+E:\zy.software.adcc\ADCC\ADCC.ARNIC424\ADCC.ARNIC424.module\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\ADCC.Project\SVN\ADCC.ARNIC424\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.dll
+D:\ADCC.Project\SVN\ADCC.ARNIC424\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.pdb
+D:\ADCC.Project\SVN\ADCC.ARNIC424\src\ADCC.ARNIC424.module\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\ADCC.Project\SVN\ADCC.ARNIC424\src\ADCC.ARNIC424.module\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\ADCC.Project\SVN\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.dll
+D:\ADCC.Project\SVN\Library\2. ADCC.ARNIC424.dlls\ADCC.ARNIC424.module.dlls\RuleEngine.Helper.pdb
+D:\ADCC.Project\SVN\ADCC.ARNIC424\src\ADCC.ARNIC424.module\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache

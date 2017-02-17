@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA47BA2E-00E8-44EE-9138-11CB8D97B775}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADCC.Common</RootNamespace>
+    <AssemblyName>ADCC.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>False</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>True</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>True</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>True</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>True</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>True</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>True</CodeContractsRedundantAssumptions>
+    <CodeContractsAssertsToContractsCheckBox>True</CodeContractsAssertsToContractsCheckBox>
+    <CodeContractsRedundantTests>True</CodeContractsRedundantTests>
+    <CodeContractsMissingPublicRequiresAsWarnings>True</CodeContractsMissingPublicRequiresAsWarnings>
+    <CodeContractsMissingPublicEnsuresAsWarnings>False</CodeContractsMissingPublicEnsuresAsWarnings>
+    <CodeContractsInferRequires>True</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferEnsuresAutoProperties>True</CodeContractsInferEnsuresAutoProperties>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestAssumptionsForCallees>False</CodeContractsSuggestAssumptionsForCallees>
+    <CodeContractsSuggestRequires>False</CodeContractsSuggestRequires>
+    <CodeContractsNecessaryEnsures>True</CodeContractsNecessaryEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsSuggestReadonly>True</CodeContractsSuggestReadonly>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsSQLServerOption />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsSkipAnalysisIfCannotConnectToCache>False</CodeContractsSkipAnalysisIfCannotConnectToCache>
+    <CodeContractsFailBuildOnWarnings>False</CodeContractsFailBuildOnWarnings>
+    <CodeContractsBeingOptimisticOnExternal>True</CodeContractsBeingOptimisticOnExternal>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+    <DocumentationFile>bin\Debug\ADCC.Common.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datas\ArcSegment.cs" />
+    <Compile Include="Datas\Area.cs" />
+    <Compile Include="Datas\CurveSegment.cs" />
+    <Compile Include="Datas\LineSegment.cs" />
+    <Compile Include="Datas\Point3D.cs" />
+    <Compile Include="Datas\Curve.cs" />
+    <Compile Include="Datas\RotateMatrix.cs" />
+    <Compile Include="Datas\TurnParameters.cs" />
+    <Compile Include="Datas\WindSpirlSegment.cs" />
+    <Compile Include="Tools\FormateTool.cs" />
+    <Compile Include="Tools\UniteTranslateTool.cs" />
+    <Compile Include="Tools\CloneTool.cs" />
+    <Compile Include="Tools\ExcelTool.cs" />
+    <Compile Include="Tools\GenericTool.cs" />
+    <Compile Include="Tools\OverrallVraTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\WindSpirlTool.cs" />
+    <Compile Include="Tools\XmlTool.cs" />
+    <Compile Include="Types\AircraftCategoryType.cs" />
+    <Compile Include="Types\AirportType.cs" />
+    <Compile Include="Types\AirwayPointType.cs" />
+    <Compile Include="Types\AltitudeUseType.cs" />
+    <Compile Include="Types\ApproachGuidanceType.cs" />
+    <Compile Include="Types\ArcSegmentArcRelationShipType.cs" />
+    <Compile Include="Types\ATCReportingType.cs" />
+    <Compile Include="Types\BearingType.cs" />
+    <Compile Include="Types\CardinalDirectionType.cs" />
+    <Compile Include="Types\CoordinateSystemType.cs" />
+    <Compile Include="Types\DesignatedPointType.cs" />
+    <Compile Include="Types\DistanceUomType.cs" />
+    <Compile Include="Types\DMEType.cs" />
+    <Compile Include="Datas\FeatureObject.cs" />
+    <Compile Include="Types\FlightLevelUomType.cs" />
+    <Compile Include="Types\FrequencyUomType.cs" />
+    <Compile Include="Types\GadientUomType.cs" />
+    <Compile Include="Types\HorizontalDistanceUomType.cs" />
+    <Compile Include="Types\IndicationDirectionType.cs" />
+    <Compile Include="Types\LatitudeType.cs" />
+    <Compile Include="Types\LineCurveRelationShipType.cs" />
+    <Compile Include="Types\LongitudeType.cs" />
+    <Compile Include="Types\MarkingConditionType.cs" />
+    <Compile Include="Types\NavaidPurposeType.cs" />
+    <Compile Include="Types\NavaidZeroBearingDirectionType.cs" />
+    <Compile Include="Types\NavaidEquipmentType.cs" />
+    <Compile Include="Types\ProcedureNavigationType.cs" />
+    <Compile Include="Types\ProcedurePhaseType.cs" />
+    <Compile Include="Types\RunwayMarkingType.cs" />
+    <Compile Include="Types\RunwayPointRoleType.cs" />
+    <Compile Include="Types\RunwayType.cs" />
+    <Compile Include="Types\SegmentLegCourseType.cs" />
+    <Compile Include="Types\SegmentLegPointRoleType.cs" />
+    <Compile Include="Types\SegmentPathType.cs" />
+    <Compile Include="Types\SensorsType.cs" />
+    <Compile Include="Types\SpeedReferenceType.cs" />
+    <Compile Include="Types\SpeedUomType.cs" />
+    <Compile Include="Types\SpeedUseType.cs" />
+    <Compile Include="Types\TemperatureUomType.cs" />
+    <Compile Include="Types\VerticalDatumType.cs" />
+    <Compile Include="Types\VerticalDistanceUomType.cs" />
+    <Compile Include="Types\VerticalReferenceType.cs" />
+    <Compile Include="Types\VORType.cs" />
+    <Compile Include="Types\ArcDirctionType.cs" />
+    <Compile Include="Types\DimensionType.cs" />
+    <Compile Include="Types\LineArcRelationShipType.cs" />
+    <Compile Include="Types\PointArcRelationShipType.cs" />
+    <Compile Include="Types\PointLineRelationShipType.cs" />
+    <Compile Include="Types\TurnDirectionType.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

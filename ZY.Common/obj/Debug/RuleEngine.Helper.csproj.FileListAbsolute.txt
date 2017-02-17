@@ -1,0 +1,5 @@
+D:\DevProjects\ADCC\ADCC-FPDAM-CodePathParse-V0.1\RuleEngine\Helper\bin\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ADCC-FPDAM-CodePathParse-V0.1\RuleEngine\Helper\bin\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ADCC-FPDAM-CodePathParse-V0.1\RuleEngine\Helper\obj\Debug\RuleEngine.Helper.dll
+D:\DevProjects\ADCC\ADCC-FPDAM-CodePathParse-V0.1\RuleEngine\Helper\obj\Debug\RuleEngine.Helper.pdb
+D:\DevProjects\ADCC\ADCC-FPDAM-CodePathParse-V0.1\RuleEngine\Helper\obj\Debug\RuleEngine.Helper.csprojResolveAssemblyReference.cache

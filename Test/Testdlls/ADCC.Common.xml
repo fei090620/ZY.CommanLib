@@ -1,0 +1,1692 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ADCC.Common</name>
+    </assembly>
+    <members>
+        <member name="P:ZY.Common.Datas.ArcSegment.Center">
+            <summary>
+            圆心
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.ArcSegment.Radius">
+            <summary>
+            半径
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.ArcSegment.ArcDirection">
+            <summary>
+            圆弧方向
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.ArcSegment.BeginRadian">
+            <summary>
+            起始弧度
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.ArcSegment.EndRadian">
+            <summary>
+            结束弧度
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.ArcSegment.BeginPoint">
+            <summary>
+            圆弧起始点
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.ArcSegment.EndPoint">
+            <summary>
+            圆弧结束点
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.#ctor(ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType,System.Double,System.Double)">
+            <summary>
+            圆弧的构造
+            </summary>
+            <param name="center">圆心</param>
+            <param name="radius">半径</param>
+            <param name="beginRadian">开始弧度</param>
+            <param name="endRadian">结束弧度</param>
+            <param name="arcDir">方向,默认顺时针</param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.#ctor(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            圆弧的构造
+            </summary>
+            <param name="center">圆心</param>
+            <param name="beginPoint">开始点坐标</param>
+            <param name="endPoint">结束点坐标</param>
+            <param name="arcDir">方向,默认顺时针</param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.SetBeginPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            设置圆弧开始点
+            </summary>
+            <param name="beginPoint"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.SetEndPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            设置圆弧结束点
+            </summary>
+            <param name="endPoint"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.SetBeginRadian(System.Double)">
+            <summary>
+            设置圆弧起始方向
+            </summary>
+            <param name="beginRadian"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.SetEndRadian(System.Double)">
+            <summary>
+            设置圆弧结束方向
+            </summary>
+            <param name="endRadian"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.SetArcSegmentDirection(ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            设置圆弧方向
+            </summary>
+            <param name="arcSegmentDirection"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.ToList(System.Double)">
+            <summary>
+            取散点
+            </summary>
+            <param name="precision">角度经度：°</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetArcTurnAngle">
+            <summary>
+            获取圆弧的圆心角都（弧度）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetTangentPointbyOutPoint(ZY.Common.Datas.Point3D,ZY.Common.Types.TurnDirectionType)">
+            <summary>
+            根据圆外一点计算圆弧切点
+            </summary>
+            <param name="outPoint"></param>
+            <param name="turnDirection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetIntersectPointsWithLine(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D)">
+            <summary>
+            计算直线与圆弧交点
+            </summary>
+            <param name="ptStart"></param>
+            <param name="ptEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetRelationShipwithLine(ZY.Common.Datas.LineSegment)">
+            <summary>
+            计算给定直线段所在直线与圆弧的位置关系
+            </summary>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetRelationShipWithPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            计算给定点与圆弧的位置关系
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetRelationShipWithArc(ZY.Common.Datas.ArcSegment)">
+            <summary>
+            计算圆与圆的位置关系(圆弧所在的圆的位置关系)
+            </summary>
+            <param name="arcSegment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.CutebyPoint(ZY.Common.Datas.Point3D,System.Boolean)">
+            <summary>
+            用给定点（必须在圆弧上，否则返回圆弧自身）截取圆弧
+            </summary>
+            <param name="point"></param>
+            <param name="bCuteEnd">返回截取后得第一段还是第二段圆弧（true：第一段）</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetTangentPointbyDir(System.Double)">
+            <summary>
+            给定方向计算圆弧切线
+            </summary>
+            <param name="dir"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetCommonTangentArcsbyArcandLine(ZY.Common.Datas.LineSegment,System.Double)">
+            <summary>
+            给定直线段，计算圆弧和直线段所在直线间的公切圆，并返回满足指定半径的圆弧
+            </summary>
+            <param name="line"></param>
+            <param name="radius"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetCommonTangentLinebyArcs(ZY.Common.Datas.ArcSegment)">
+            <summary>
+            给定圆弧，计算圆弧与圆弧之间的公切线段集合
+            </summary>
+            <param name="rightArcSegment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.Reverse">
+            <summary>
+            翻转圆弧段（起点=>末尾点,末尾点=>起点，方向更改）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.Move(System.Double,System.Double)">
+            <summary>
+            根据指定方向和距离平移圆弧
+            </summary>
+            <param name="radian"></param>
+            <param name="distance"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.Rotate(ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+             根据指定基准点，旋转角度和旋转方向旋转圆弧
+            </summary>
+            <param name="referencePos"></param>
+            <param name="radius"></param>
+            <param name="rotateDirection"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.RotatePoint(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            坐标点绕某点旋转radian
+            </summary>
+            <param name="point"></param>
+            <param name="referencePos"></param>
+            <param name="radius"></param>
+            <param name="rotateDirection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.CuteOutbyPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            根据圆弧上的一点把圆弧截为两个子圆弧
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetCurveCurveRelationShipType(ZY.Common.Datas.LineSegment)">
+            <summary>
+            计算传入的射线和当前圆弧位置关系
+            </summary>
+            <param name="line">传入的射线</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.GetCrossPoints(ZY.Common.Datas.LineSegment)">
+            <summary>
+            获取传入射线与圆弧的交点
+            </summary>
+            <param name="line">传入的射线</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.ArcSegment.PointIsOnCurveSegment(ZY.Common.Datas.Point3D)">
+            <summary>
+            判断点是否在圆弧线段上
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Area.CreateNew(ZY.Common.Datas.Curve,ZY.Common.Datas.Curve)">
+            <summary>
+            通用构造区域方法
+            </summary>
+            <param name="outterLine">外轮廓曲线，方向顺时针</param>
+            <param name="innerLine">内轮廓曲线，方向逆时针</param>
+        </member>
+        <member name="M:ZY.Common.Datas.Area.CreateNewBySameDirectionLines(ZY.Common.Datas.LineSegment,ZY.Common.Datas.LineSegment)">
+            <summary>
+            通过两条同向直线段构造
+            （首点与首点连接，末尾点与末尾点链接）区域的方法（区域为矩形或平行四边形）
+            </summary>
+            <param name="boundary">一条边</param>
+            <param name="otherBoundary">另一条边，在构造过程中被翻转方向</param>
+        </member>
+        <member name="M:ZY.Common.Datas.Area.CreateNewByInverseDirectionLines(ZY.Common.Datas.LineSegment,ZY.Common.Datas.LineSegment)">
+            <summary>
+            通过两条反向直线段构造
+            （首点与末尾点连接，末尾点与首点链接）区域的方法（区域为矩形或平行四边形）
+            </summary>
+            <param name="boundary">一条边</param>
+            <param name="otherBoundary">另一条边</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Area.GetIncludedPoints(System.Collections.Generic.List{ZY.Common.Datas.Point3D})">
+            <summary>
+            从指定点集合中获取区域内的点集合
+            </summary>
+            <param name="points">待选点集合</param>
+            <returns>区域中的点集合</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Area.IsInclude(ZY.Common.Datas.Point3D)">
+            <summary>
+            区域中是否包含指定点
+            </summary>
+            <param name="point">指定点</param>
+            <returns>是否包含指定点</returns>
+        </member>
+        <member name="P:ZY.Common.Datas.Area.OutterLine">
+            <summary>
+            外轮廓线（方向顺时针）
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.Area.InnerLine">
+            <summary>
+            内轮廓线（默认为null，方向逆时针）
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.ToList(System.Double)">
+            <summary>
+            根据指定精度获取点列
+            </summary>
+            <param name="precision">精度，默认0.1（弧度或距离）</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.CopyMove(System.Double,System.Double)">
+            <summary>
+            拷贝平移（原始曲线段保持不变，新增一个平移后的曲线段）
+            </summary>
+            <param name="radian">平移方向</param>
+            <param name="distance">平移距离</param>
+            <returns>平移后的曲线段</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.Move(System.Double,System.Double)">
+            <summary>
+            平移
+            </summary>
+            <param name="radian">平移方向</param>
+            <param name="distance">平移距离</param>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.CopyRotate(ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            拷贝旋转（原始曲线段保持不变，新增一个旋转后的曲线段）
+            指定基准点，按指定方向（顺/逆时针）旋转指定角度
+            </summary>
+            <param name="referencePos">旋转基准点</param>
+            <param name="radian">旋转角度</param>
+            <param name="rotateDirection">旋转方向</param>
+            <returns>旋转后的曲线</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.Rotate(ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            指定基准点，按指定方向（顺/逆时针）旋转指定角度
+            </summary>
+            <param name="referencePos">旋转基准点</param>
+            <param name="radian">旋转角度</param>
+            <param name="rotateDirection">旋转方向</param>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.CutOutPreviousParagraphbyPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            根据曲线段上的一点截取点之前的曲线段
+            </summary>
+            <param name="point">曲线上用于截取的点</param>
+            <returns>点之前的曲线段，点不在曲线上返回原始曲线的深度拷贝</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.CuteOutAfterParagraphbyPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            根据曲线段上的一点截取点之后的曲线段
+            </summary>
+            <param name="point">曲线上用于截取的点</param>
+            <returns>点之后的曲线段，点不在曲线上则返回</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.CuteOutbyPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            根据曲线段上的一点把曲线段截为两个子曲线段
+            </summary>
+            <param name="point">曲线上用于截取的点</param>
+            <returns>截取后的子曲线段，点不在曲线上返回原始曲线</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.GetCurveCurveRelationShipType(ZY.Common.Datas.LineSegment)">
+            <summary>
+            判断射线与曲线段位置关系
+            </summary>
+            <param name="line">射线</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.GetCrossPoints(ZY.Common.Datas.LineSegment)">
+            <summary>
+            获取射线与曲线段的交点集合
+            </summary>
+            <param name="line">射线</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.GetStartCourse">
+            <summary>
+            获取曲线段的起始方向（弧线为沿曲线方向的切线方向），单位弧度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.GetEndCourse">
+            <summary>
+            获取曲线段的末尾方向（弧线为沿曲线方向的切线方向），单位弧度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.GetStartPoint">
+            <summary>
+            获取起始点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.Reverse">
+            <summary>
+            反转曲线段（调转方向）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.GetEndPoint">
+            <summary>
+            获取末尾点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.CurveSegment.PointIsOnCurveSegment(ZY.Common.Datas.Point3D)">
+            <summary>
+            判断点是否在曲线段上
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ZY.Common.Datas.LineSegment.BeginPoint">
+            <summary>
+            起始点
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.LineSegment.EndPoint">
+            <summary>
+            末尾点
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetDirection">
+            <summary>
+            获取线段方向（弧度）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetLength">
+            <summary>
+            获取线段长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.#ctor(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D)">
+            <summary>
+            已知起点和终点够造线段
+            </summary>
+            <param name="startPoint"></param>
+            <param name="endPoint"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.#ctor(ZY.Common.Datas.Point3D,System.Double,System.Double)">
+            <summary>
+            已知起点，线段长度和方向构造线段
+            </summary>
+            <param name="beginPoint"></param>
+            <param name="length"></param>
+            <param name="dir"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.SetBeginPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            设置起始点
+            </summary>
+            <param name="beginPoint"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.SetEndPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            设置末尾点
+            </summary>
+            <param name="endPoint"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.ToList(System.Double)">
+            <summary>
+            将线段根据精度分解为点列
+            </summary>
+            <param name="presence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.Reverse">
+            <summary>
+            翻转直线段（起点=>末尾点，末尾点=>起点）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetLineDirIntersection(ZY.Common.Datas.LineSegment)">
+            <summary>
+            计算两条线段所在射线的交点
+            </summary>
+            <param name="otherLine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetArcDirToLineDirintersection(ZY.Common.Datas.LineSegment)">
+            <summary>
+            计算两条线段所在直线的交点
+            </summary>
+            <param name="otherLine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetIncludeAngle(ZY.Common.Datas.LineSegment)">
+            <summary>
+            计算两条线段方向向量的夹角
+            </summary>
+            <param name="otherLine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.Expand(System.Int32,System.Double)">
+            <summary>
+            延长直线段
+            </summary>
+            <param name="type">延长类型：0都延长，1延长尾点，-1延长首点</param>
+            <param name="expandDis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetIntersection(ZY.Common.Datas.LineSegment)">
+            <summary>
+            计算两条线段的交点
+            </summary>
+            <param name="otherLine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetIntersectionWithRay(ZY.Common.Datas.Point3D,System.Double)">
+            <summary>
+            计算当前线段与射线的交点
+            </summary>
+            <param name="Otherlinepoint"></param>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.ToDis(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D@)">
+            <summary>
+            计算点到直线段所在直线的距离
+            </summary>
+            <param name="point"></param>
+            <param name="pedalPoint">垂足</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetPointRelationShip(ZY.Common.Datas.Point3D)">
+            <summary>
+            计算当前线段与指定点的位置关系
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetIntersect(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D)">
+            <summary>
+            计算线段所在直线的交点
+            </summary>
+            <param name="OtherlineStar"></param>
+            <param name="OtherlineEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetTurnDirection(ZY.Common.Datas.Point3D)">
+            <summary>
+            计算指定点相对于当前线段的转弯方向
+            </summary>
+            <param name="otherPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.Move(System.Double,System.Double)">
+            <summary>
+            根据指定方向和距离平移直线段
+            </summary>
+            <param name="radian"></param>
+            <param name="distance"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.Rotate(ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            根据指定基准点，旋转角度和旋转方向旋转直线段
+            </summary>
+            <param name="referencePos"></param>
+            <param name="radian"></param>
+            <param name="rotateDirection"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.RotatePoint(ZY.Common.Datas.Point3D,ZY.Common.Datas.Point3D,System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            坐标点绕某点旋转radian
+            </summary>
+            <param name="point"></param>
+            <param name="referencePos"></param>
+            <param name="radian"></param>
+            <param name="rotateDirection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.CuteOutbyPoint(ZY.Common.Datas.Point3D)">
+            <summary>
+            根据直线段上的一点把线段截为两个子线段
+            </summary>
+            <param name="point">直线上用于截取的点</param>
+            <returns>截取后的子线段，点不在直线上返回原始线段</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetCurveCurveRelationShipType(ZY.Common.Datas.LineSegment)">
+            <summary>
+            判断传入的射线和当前线段位置关系（当前线段在射线的左、右...）
+            </summary>
+            <param name="line">传入的射线</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetCrossPoints(ZY.Common.Datas.LineSegment)">
+            <summary>
+            获取传入射线与当前线段的交点
+            </summary>
+            <param name="line">传入的射线</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetStartCourse">
+            <summary>
+            获取曲线段的起始方向（弧线为沿曲线方向的切线方向），单位弧度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetEndCourse">
+            <summary>
+            获取曲线段的末尾方向（弧线为沿曲线方向的切线方向），单位弧度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetStartPoint">
+            <summary>
+            获取起始点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.GetEndPoint">
+            <summary>
+            获取末尾点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.LineSegment.PointIsOnCurveSegment(ZY.Common.Datas.Point3D)">
+            <summary>
+            判断点是否在线段上
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.GetNextPoint(System.Double,System.Double)">
+            <summary>
+            已知距离和角度（弧度）计算下一个点
+            </summary>
+            <param name="radian"></param>
+            <param name="precision"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.DisTo(ZY.Common.Datas.Point3D)">
+            <summary>
+            计算当前点至另一个点的距离
+            </summary>
+            <param name="otherPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.DirTo(ZY.Common.Datas.Point3D)">
+            <summary>
+            计算当前点至下一个点的方向与正北方向夹角（弧度表示）
+            </summary>
+            <param name="otherPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.Vector(ZY.Common.Datas.Point3D)">
+            <summary>
+            以当前点为起点，以EndPoint为终点够着向量
+            </summary>
+            <param name="EndPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.Vector(System.Double)">
+            <summary>
+            根据当前点及距离构造向量
+            </summary>
+            <param name="radian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.VectorProduct(ZY.Common.Datas.Point3D,ZY.Common.Types.DimensionType)">
+            <summary>
+            向量叉积(默认维度为二维,暂时不支持三维向量的叉乘运算，因为三维叉乘返回三维向量)
+            </summary>
+            <param name="otherVector"></param>
+            <param name="dimension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.GetModel">
+            <summary>
+            获取向量的模或长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.PointMulity(ZY.Common.Datas.Point3D)">
+            <summary>
+            向量点乘
+            </summary>
+            <param name="otherVector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.IncludedAngle(ZY.Common.Datas.Point3D)">
+            <summary>
+            计算当前向量与otherVector的夹角
+            </summary>
+            <param name="otherVector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Point3D.IncludeAnglebyTwoDirs(System.Double,System.Double)">
+            <summary>
+            以当前点为基点，计算两个方向的向量夹角
+            </summary>
+            <param name="dir1"></param>
+            <param name="dir2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZY.Common.Datas.Curve">
+            <summary>
+            曲线
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.ToList(System.Double)">
+            <summary>
+            根据精度取点列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.GetFirstLineSegment">
+            <summary>
+            获取航段航迹的第一个直线段,没有返回null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.GetFirstArcSegment">
+            <summary>
+            获取航段航迹的第一个圆弧段，没有返回null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.GetLastLineSegment">
+            <summary>
+            获取航段航迹的最后一个直线段，没有返回null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.GetLastArcSegment">
+            <summary>
+            获取航段航迹的最后一个圆弧段，没有返回null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.GetStartTangentRadian">
+            <summary>
+            获取起始方向（直线段的方向or圆弧中心点到起点的方向）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.GetEndTangentRadian">
+            <summary>
+            获取结束方向（直线段的方向or圆弧中心点到起点的方向）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.ConnectBackWith(ZY.Common.Datas.Curve)">
+            <summary>
+            在曲线的后端连接另一条曲线
+            （如果末尾端点和另一条曲线的首点不是同一个点，则用直线段连接）
+            </summary>
+            <param name="other">另一条曲线</param>
+            <returns>连接后的曲线</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.ConnectBackWith(ZY.Common.Datas.CurveSegment)">
+            <summary>
+            在曲线的后端连接另一条曲线段
+            （如果末尾端点和另一条曲线的首点不是同一个点，则用直线段连接）
+            </summary>
+            <param name="otherCurveSegment">另一条曲线段</param>
+            <returns>连接后的曲线</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.ConnectFrontWith(ZY.Common.Datas.Curve)">
+            <summary>
+            在曲线的前端连接另一条曲线
+            （如果起始端点和另一条曲线的末尾点不是同一个点，则用直线段连接）
+            </summary>
+            <param name="other">另一条曲线</param>
+            <returns>连接后的曲线</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.ConnectFrontWith(ZY.Common.Datas.CurveSegment)">
+            <summary>
+            在曲线的前端连接另一条曲线段
+            （如果起始端点和另一条曲线段的末尾点不是同一个点，则用直线段连接）
+            </summary>
+            <param name="otherCurveSegment">另一条曲线段</param>
+            <returns>连接后的曲线</returns>
+        </member>
+        <member name="M:ZY.Common.Datas.Curve.Reverse">
+            <summary>
+            翻转曲线（曲线段顺序翻转，曲线段方向翻转）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ZY.Common.Datas.RotateMatrix">
+            <summary>
+            矩阵相关（2D）
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.Add(ZY.Common.Datas.RotateMatrix)">
+            <summary>
+            加法
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.Subtract(ZY.Common.Datas.RotateMatrix)">
+            <summary>
+            减法
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.Multiply(System.Double)">
+            <summary>
+            乘法（乘以常数）
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.Multiply(ZY.Common.Datas.RotateMatrix)">
+            <summary>
+            乘法（乘以矩阵）
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.Rotate2D(System.Double,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            旋转某角度
+            </summary>
+            <param name="angle"></param>
+             <param name="rotateDirection"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.RotateAt2D(System.Double,ZY.Common.Datas.Point3D,ZY.Common.Types.ArcDirctionType)">
+            <summary>
+            先平移后旋转
+            </summary>
+            <param name="angle"></param>
+            <param name="point"></param>
+            <param name="rotateDirection"></param>
+        </member>
+        <member name="M:ZY.Common.Datas.RotateMatrix.CreateRotationRadians2D(System.Double,System.Double,System.Double)">
+            <summary>
+            Creates a rotation transformation about the given point(2D)
+            </summary>
+            <param name="angle"></param>
+            <param name="centerX"></param>
+            <param name="centerY"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.WindSpirlSegment.ToList(System.Double)">
+            <summary>
+            获取点集合
+            </summary>
+            <param name="precision"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.WindSpirlSegment.GetStartCourse">
+            <summary>
+            起始弧度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.WindSpirlSegment.GetEndCourse">
+            <summary>
+            结束弧度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.WindSpirlSegment.GetStartPoint">
+            <summary>
+            起始点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Datas.WindSpirlSegment.GetEndPoint">
+            <summary>
+            终止点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ZY.Common.Datas.FeatureObject">
+            <summary>
+            与地图交互统一数据接口
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.FeatureObject.FeatureAttribute">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.FeatureObject.Coordinates">
+            <summary>
+            点坐标
+            </summary>
+        </member>
+        <member name="P:ZY.Common.Datas.FeatureObject.LayerName">
+            <summary>
+            图层名称
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Tools.FormateTool">
+            <summary>
+            数据格式化工具类
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.ToStandardRadian(System.Double)">
+            <summary>
+            将角度（格式为弧度值,范围不限）转换为0-2*PI范围内的弧度值（标准弧度）
+            </summary>
+            <param name="radian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.ToStandardRadian(System.Double,System.Double,System.Double,ZY.Common.Types.LatitudeType)">
+            <summary>
+            纬度转化为度（带单位）
+            </summary>
+            <param name="degree"></param>
+            <param name="minute"></param>
+            <param name="second"></param>
+            <param name="latitudeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.ToStandardRadian(System.Double,System.Double,System.Double,ZY.Common.Types.LongitudeType)">
+            <summary>
+            经度转化为度（带单位）
+            </summary>
+            <param name="subDegree"></param>
+            <param name="subMinute"></param>
+            <param name="subSecond"></param>
+            <param name="longitudeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.GetSubDegree(System.Double)">
+            <summary>
+            根据标准经纬度截取度（无单位）
+            </summary>
+            <param name="totalDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.GetSubMinute(System.Double)">
+            <summary>
+            根据标准经纬度截取分（无单位）
+            </summary>
+            <param name="totalDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.GetSubSecond(System.Double)">
+            <summary>
+            根据标准经纬度截取秒（无单位）
+            </summary>
+            <param name="totalDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.GetLatitudeType(System.Double)">
+            <summary>
+            根据标准经纬度获取纬度单位
+            </summary>
+            <param name="totalDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.GetLongitudeType(System.Double)">
+            <summary>
+            根据标准经纬度获取经度单位
+            </summary>
+            <param name="totalDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.FormateTool.ToStandardByPrecision(System.Double,System.Double)">
+            <summary>
+            把double类型的值转化为按精度划分的份数
+            </summary>
+            <param name="doubleValue"></param>
+            <param name="precision"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZY.Common.Tools.UniteTranslateTool">
+            <summary>
+            单位转换类
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.ToAngle(System.Double)">
+            <summary>
+            弧度转换为角度
+            </summary>
+            <param name="radian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.ToRadian(System.Double)">
+            <summary>
+            角度转弧度
+            </summary>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.MeterToFt(System.Double)">
+            <summary>
+            米转换为英尺
+            </summary>
+            <param name="meter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.MeterToKilometer(System.Double)">
+            <summary>
+            米转换为千米
+            </summary>
+            <param name="meter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KilometerToMeter(System.Double)">
+            <summary>
+            千米转换为米
+            </summary>
+            <param name="kiloMeter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.FtToMeter(System.Double)">
+            <summary>
+            英尺转换为米
+            </summary>
+            <param name="fit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.FtToKilometer(System.Double)">
+            <summary>
+            ft转换为km
+            </summary>
+            <param name="fit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KilometerToFt(System.Double)">
+            <summary>
+            km转换为ft
+            </summary>
+            <param name="km"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KilometerToMile(System.Double)">
+            <summary>
+            km转换为海里
+            </summary>
+            <param name="km"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.MileToKilometer(System.Double)">
+            <summary>
+            海里转换为km
+            </summary>
+            <param name="mile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.MeterToMile(System.Double)">
+            <summary>
+            米转化为海里
+            </summary>
+            <param name="meter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.MileToMeter(System.Double)">
+            <summary>
+            海里转化为米
+            </summary>
+            <param name="nmi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KM_HtoM_S(System.Double)">
+            <summary>
+            速度km/h转化为m/s
+            </summary>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.M_StoKM_H(System.Double)">
+            <summary>
+            速度m/s转化为km/h
+            </summary>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KttoKM_H(System.Double)">
+            <summary>
+            速度Kt转化为km/h
+            </summary>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KM_HtoKt(System.Double)">
+            <summary>
+            km/h转化为Kt
+            </summary>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.M_StoKt(System.Double)">
+            <summary>
+            m/s转化为Kt
+            </summary>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KttoM_S(System.Double)">
+            <summary>
+            Kt转化为m/s
+            </summary>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.KHzToMHz(System.Double)">
+            <summary>
+            KHz转为MHz
+            </summary>
+            <param name="kHz"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.MHzToKHz(System.Double)">
+            <summary>
+            MHz转为KHz
+            </summary>
+            <param name="mHz"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.TemperatureCtoK(System.Double)">
+            <summary>
+            摄氏度转开氏度
+            </summary>
+            <param name="c">摄氏度</param>
+            <returns>开氏度</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.TemperatureCtoF(System.Double)">
+            <summary>
+            摄氏度转华氏度
+            </summary>
+            <param name="c">摄氏度</param>
+            <returns>华氏度</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.TemperatureKtoC(System.Double)">
+            <summary>
+            开氏度转摄氏度
+            </summary>
+            <param name="k">开氏度</param>
+            <returns>摄氏度</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.TemperatureFtoC(System.Double)">
+            <summary>
+            华氏度转摄氏度
+            </summary>
+            <param name="h">华氏度</param>
+            <returns>摄氏度</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.TemperatureFtoK(System.Double)">
+            <summary>
+            华氏度转开氏度
+            </summary>
+            <param name="h">华氏度</param>
+            <returns>开氏度</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.UniteTranslateTool.TemperatureKtoF(System.Double)">
+            <summary>
+            开氏度转华氏度
+            </summary>
+            <param name="k">开氏度</param>
+            <returns>华氏度</returns>
+        </member>
+        <member name="T:ZY.Common.Tools.DeepCloneType">
+            <summary>
+            深度克隆类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Tools.CloneTool">
+            <summary>
+            Clone工具类
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Tools.CloneTool.DeepClone(System.Object,ZY.Common.Tools.DeepCloneType)">
+            <summary>
+            深度复制
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Tools.ExcelTool">
+            <summary>
+            Excel文件处理工具
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Tools.ExcelTool.CSVWriter(System.Data.DataTable,System.String)">
+            <summary>
+            将DataTable中数据写入到CSV文件中
+            </summary>
+            <param name="dt">提供保存数据的DataTable</param>
+            <param name="fullPath">CSV的文件路径</param>
+        </member>
+        <member name="M:ZY.Common.Tools.ExcelTool.CSVReader(System.String)">
+            <summary>
+            将CSV文件的数据读取到DataTable中
+            </summary>
+            <param name="filePath">CSV文件路径</param>
+            <returns>返回读取了CSV数据的DataTable</returns>
+        </member>
+        <member name="T:ZY.Common.Tools.GenericTool">
+            <summary>
+            泛型相关工具类（可用Linq替代）
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Tools.GenericTool.DistinctValue``2(System.Collections.Generic.Dictionary{``0,``1})">
+            <summary>
+            去除Dictionary中Value的重复值
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="dictionary"></param>
+            <returns>Value中无重复的Dictionary</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.GenericTool.GetCellValuebyPartConlumeName(System.Data.DataRow,System.String)">
+            <summary>
+            根据column名称获取指定DataRow的单元值
+            </summary>
+            <param name="row"></param>
+            <param name="partName"></param>
+            <returns>如果DataRow包含该列名，则返回字符串，否则返回空字符串</returns>
+        </member>
+        <member name="M:ZY.Common.Tools.GenericTool.ToList``2(System.Collections.Generic.List{``1},System.Func{``1,``0})">
+            <summary>
+            将list中的T2类型经过fun转换为T1类型，并返回T1类型的值
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="list"></param>
+            <param name="fun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.GenericTool.GetPartial``1(System.Collections.Generic.List{``0},System.Func{``0,System.Boolean})">
+            <summary>
+            获取list中fun函数为真的部分
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fun"></param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZY.Common.Tools.OverrallVraTool">
+            <summary>
+            全局变量定义工具类
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.DoublePrecision">
+            <summary>
+            double类型的自定义数据精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.SpeedPrecision">
+            <summary>
+            速度值的精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.GradientPrecision">
+            <summary>
+            梯度值的精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.HorizontalDistancePrecision">
+            <summary>
+            水平距离值精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.VerticalDistancePrecision">
+            <summary>
+            垂直距离值精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.BearingPrecision">
+            <summary>
+            方位角度值精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.FrequencyPrecision">
+            <summary>
+            频率值精度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Tools.OverrallVraTool.TemperaturePrecision">
+            <summary>
+            温度取值精度
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Tools.XmlTool">
+            <summary>
+            xml帮助文件
+            </summary>
+        </member>
+        <member name="M:ZY.Common.Tools.XmlTool.Serialize(System.Type,System.Object)">
+            <summary>
+            序列化
+            </summary>
+            <param name="type"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZY.Common.Tools.XmlTool.Deserialize(System.Type,System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="type"></param>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZY.Common.Types.AircraftCategoryType">
+            <summary>
+            航空器类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.AirportType">
+            <summary>
+            机场类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.AirwayPointType">
+            <summary>
+            航路点类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.AltitudeUseType">
+            <summary>
+            高度用法类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ApproachGuidanceType">
+            <summary>
+            逻辑跑道 跑道标志类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ArcSegmentArcRelationShipType">
+            <summary>
+            圆弧与圆弧的位置关系
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ATCReportingType">
+            <summary>
+            ATC报告类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.BearingType">
+            <summary>
+            方位角类型
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.BearingType.True">
+            <summary>
+            真方位
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.BearingType.Mag">
+            <summary>
+            磁方位
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.CardinalDirectionType">
+            <summary>
+            基本方向   航路点
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.CoordinateSystemType">
+            <summary>
+            坐标系
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.DesignatedPointType">
+             <summary>
+            航路点类型 
+             </summary>
+        </member>
+        <member name="T:ZY.Common.Types.DistanceUomType">
+            <summary>
+            距离单位
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.DMEType">
+            <summary>
+            DME台类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.FlightLevelUomType">
+            <summary>
+            飞行高度层单位
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.FrequencyUomType">
+            <summary>
+            频率单位
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.GadientUomType">
+            <summary>
+            梯度单位类型
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.GadientUomType.Percentage">
+            <summary>
+            %
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.GadientUomType.Degree">
+            <summary>
+            角度，°
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.HorizontalDistanceUomType">
+            <summary>
+            水平距离单位
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.IndicationDirectionType">
+            <summary>
+            指示方向    航路点
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.IndicationDirectionType.To">
+            <summary>
+            向台
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.IndicationDirectionType.From">
+            <summary>
+            背台
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.LatitudeType">
+            <summary>
+            纬度类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.LineCurveRelationShipType">
+            <summary>
+            直线与曲线段的位置关系
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.LongitudeType">
+            <summary>
+            经度类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.MarkingConditionType">
+            <summary>
+            进近条件类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.NavaidPurposeType">
+            <summary>
+            导航台目的类型编码
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.NavaidZeroBearingDirectionType">
+            <summary>
+            导航台引导方位类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.NavaidEquipmentType">
+            <summary>
+            导航台设备类型
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.NavaidEquipmentType.ILS_DME">
+            <summary>
+            组合导航设备
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.NavaidEquipmentType.VOR_DME">
+            <summary>
+            合装导航设备
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.NavaidEquipmentType.VOR">
+            <summary>
+            单台导航设备
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.NavaidType">
+            <summary>
+            单个导航台类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ProcedureNavigationType">
+            <summary>
+            飞行程序导航类型
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.ProcedureNavigationType.RNAV">
+            <summary>
+            RNAV导航
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.ProcedureNavigationType.Traditional">
+            <summary>
+            传统导航
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ProcedurePhaseType">
+            <summary>
+            程序段类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ProcedureType">
+            <summary>
+            程序类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.FlyStageType">
+            <summary>
+            飞行阶段
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.Ocean">
+            <summary>
+            海洋
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.EnRoute">
+            <summary>
+            航路
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.STAR">
+            <summary>
+            进场
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.InitialApproach">
+            <summary>
+            起始进近
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.MiddleApproach">
+            <summary>
+            中间进近
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.FinalApproach">
+            <summary>
+            最后进近
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.MissedApproach">
+            <summary>
+            复飞
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.SID">
+            <summary>
+            离场
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.All">
+            <summary>
+            所有阶段
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.Approach">
+            <summary>
+            进近阶段
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.FlyStageType.Termianl">
+            <summary>
+            终端区阶段
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.RunwayMarkingType">
+            <summary>
+            进近标志类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.RunwayPointRoleType">
+            <summary>
+            跑道点类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.RunwayType">
+            <summary>
+            物理跑道标志类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SegmentLegCourseType">
+            <summary>
+            航段航迹类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SegmentLegPointRoleType">
+            <summary>
+            航段 点角色类型
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SegmentLegPointRoleType.IAF">
+            <summary>
+            起始进近定位点
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SegmentLegPointRoleType.IF">
+            <summary>
+            中间进近定位点
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SegmentLegPointRoleType.FAF">
+            <summary>
+            最后进近定位点
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SegmentLegPointRoleType.SDF">
+            <summary>
+            梯级下降点
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SegmentLegPointRoleType.MAPT">
+            <summary>
+            复飞点
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SegmentPathType">
+            <summary>
+            航径编码类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SensorsType">
+            <summary>
+            RNAV导航类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SpeedReferenceType">
+            <summary>
+            速度参考类型
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SpeedReferenceType.GS">
+            <summary>
+            地速
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SpeedReferenceType.IAS">
+            <summary>
+            指示空速
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.SpeedReferenceType.TAS">
+            <summary>
+            真空速
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SpeedUomType">
+            <summary>
+            速度单位类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.SpeedUseType">
+            <summary>
+            速度用法类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.TemperatureUomType">
+            <summary>
+            温度单位
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.TemperatureUomType.C">
+            <summary>
+            摄氏度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.TemperatureUomType.F">
+            <summary>
+            华氏度
+            </summary>
+        </member>
+        <member name="F:ZY.Common.Types.TemperatureUomType.K">
+            <summary>
+            开氏度
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.VerticalDatumType">
+            <summary>
+            高程
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.VerticalDistanceUomType">
+            <summary>
+            垂直距离单位
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.VerticalReferenceType">
+            <summary>
+            垂直基准类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.VORType">
+            <summary>
+            VOR台类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.ArcDirctionType">
+            <summary>
+            圆弧方向
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.DimensionType">
+            <summary>
+            维度类型
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.LineArcRelationShipType">
+            <summary>
+            直线与圆弧的位置关系
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.PointArcRelationShipType">
+            <summary>
+            点与圆弧的位置关系
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.PointLineRelationShipType">
+            <summary>
+            点与线段的位置关系
+            </summary>
+        </member>
+        <member name="T:ZY.Common.Types.TurnDirectionType">
+            <summary>
+            转弯方向
+            </summary>
+        </member>
+    </members>
+</doc>
