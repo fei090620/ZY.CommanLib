@@ -18,7 +18,8 @@ namespace ADCC.Common.Tools
         public static string GetFileStream(this Inputer inputer, string xsdFile)
         {
             inputer.ValidateFile(xsdFile);
-            return "sss";
+            var file = File.ReadAllText(xsdFile);
+            return file.Replace("\n","").Replace("\t","").Replace("\r","");
         }
     }
 

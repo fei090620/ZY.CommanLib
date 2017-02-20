@@ -53,6 +53,16 @@ namespace ZY.Common.Tools.Test
             var fileStream = _inputer.GetFileStream(xsdFile);
             Assert.IsFalse(string.IsNullOrEmpty(fileStream));
         }
+
+        [TestMethod]
+        public void when_input_xsd_file_GetFileStream_return_file_content_string()
+        {
+            var xsdFile = @"..\Test.resourse\xsdFile.xsd";
+            Assert.IsTrue(File.Exists(xsdFile));
+            var fileStream = _inputer.GetFileStream(xsdFile);
+            var content = "<?xml version=\"1.0\" enconding=\"uft8\"?>";
+            Assert.IsTrue(string.CompareOrdinal(content, fileStream) == 0);
+        }
     }
 
 }
