@@ -176,7 +176,7 @@ namespace ZY.Common.Datas
 
             List<Point3D> points = new List<Point3D>();
             points.Add(this.BeginPoint);
-            if (points.Exists(x => x.Equals(this.EndPoint)))
+            if (!points.Exists(x => x.Equals(this.EndPoint)))
             {
                 points.Add(this.EndPoint);
             }
@@ -185,7 +185,7 @@ namespace ZY.Common.Datas
             for (int i = 1; i <= pointCount; i++)
             {
                 Point3D p = Center.GetNextPoint(BeginRadian +
-                    ((ArcDirection == ArcDirctionType.CLOCK_WISE ? 1 : -1) * i * UniteTranslateTool.ToRadian(precision)), Radius);
+                    ((ArcDirection == ArcDirctionType.CLOCK_WISE ? 1 : -1) * i * precision), Radius);
                 if (!points.Exists(x => x.Equals(p)))
                 {
                     points.Add(p);
