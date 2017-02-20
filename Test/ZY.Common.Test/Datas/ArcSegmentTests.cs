@@ -35,25 +35,25 @@ namespace ZY.Common.Datas.Tests
             //传入的精度为角度精度，需要先将弧度转化为角度
             //整圆非整除
             Init();
-            var list = this.ArcSegment_Full.ToList(35);
+            var list = this.ArcSegment_Full.ToList(35 * Math.PI / 180);
             Assert.IsNotNull(list);
             Assert.AreEqual(list.Count, Math.Ceiling((double)360 / 35));
 
             //半圆非整除
             Init();
-            var list2 = this.ArcSegment_Part.ToList(20);
+            var list2 = this.ArcSegment_Part.ToList(20 * Math.PI / 180);
             Assert.IsNotNull(list2);
             Assert.AreEqual(list2.Count, Math.Ceiling((double)90 / 20) + 1); //向上取整再+1
 
             //整圆整除
             Init();
-            var list3 = this.ArcSegment_Full.ToList(36);
+            var list3 = this.ArcSegment_Full.ToList(36 * Math.PI / 180);
             Assert.IsNotNull(list3);
             Assert.AreEqual(list3.Count, Math.Ceiling((double)360 / 36));
 
             //半圆整除
             Init();
-            var list4 = this.ArcSegment_Part.ToList(30);
+            var list4 = this.ArcSegment_Part.ToList(30 * Math.PI / 180); ;
             Assert.IsNotNull(list4);
             Assert.AreEqual(list4.Count, Math.Ceiling((double)90 / 30) + 1);
         }
