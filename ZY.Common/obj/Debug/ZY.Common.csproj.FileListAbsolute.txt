@@ -10,3 +10,4 @@ D:\ADCC.Code\Learning\CommanLib\ZY.Common\obj\Debug\ADCC.Common.rewritten
 D:\ADCC.Code\Learning\CommanLib\ZY.Common\obj\Debug\ADCC.Common.dll
 D:\ADCC.Code\Learning\CommanLib\ZY.Common\obj\Debug\ADCC.Common.pdb
 D:\ADCC.Code\Learning\CommanLib\ZY.Common\obj\Debug\CodeContractAnalysisRun.log
+D:\ADCC.Code\Learning\CommanLib\ZY.Common\obj\Debug\ZY.Common.csprojResolveAssemblyReference.cache

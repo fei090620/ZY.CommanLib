@@ -102,6 +102,7 @@
     <Compile Include="Datas\TurnParameters.cs" />
     <Compile Include="Datas\WindSpirlSegment.cs" />
     <Compile Include="Tools\FormateTool.cs" />
+    <Compile Include="Tools\InputTool.cs" />
     <Compile Include="Tools\UniteTranslateTool.cs" />
     <Compile Include="Tools\CloneTool.cs" />
     <Compile Include="Tools\ExcelTool.cs" />
